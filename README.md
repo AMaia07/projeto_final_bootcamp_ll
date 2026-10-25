@@ -3,11 +3,8 @@
 ## Integrantes e responsabilidades
 
 | Nome | Matrícula | Usuário GitHub | Funcionalidade (código) | Link da principal PR |
-|---|---|---|---|---|
-| Artur Maia de Morais | 22610962 | AMaia07 | _preencher_ | _preencher_ |
-| _preencher_ | _preencher_ | _preencher_ | _preencher_ | _preencher_ |
+| Artur Maia de Morais | 22610962 | AMaia07 | Favoritos: marcar, listar e remover jogos, validação do apelido e testes | [PR #1](https://github.com/AMaia07/projeto_final_bootcamp_ll/pull/1) |
 
-Papéis acumulativos (testes, CI, Docker, README): _preencher_.
 
 ## Descrição
 Aplicação web colaborativa em que o grupo monta um catálogo de jogos, dá notas com comentários e marca favoritos.
@@ -17,9 +14,9 @@ Aplicação web colaborativa em que o grupo monta um catálogo de jogos, dá not
 - **Limitação conhecida:** políticas de acesso (RLS) abertas para o papel `anon`; não há login, os usuários são identificados por apelido
 
 ## Links
-- **Repositório:** _preencher_
-- **Docker Hub:** _preencher_
-- **Aplicação no ar (se houver):** _preencher_
+- **Repositório:** https://github.com/AMaia07/projeto_final_bootcamp_ll
+- **Docker Hub:** https://hub.docker.com/r/amaia07/catalogo-jogos
+- **Aplicação no ar (se houver):** https://amaia07.github.io/projeto_final_bootcamp_ll/
 
 ## Como executar localmente
 1. Clone o repositório
@@ -27,16 +24,16 @@ Aplicação web colaborativa em que o grupo monta um catálogo de jogos, dá not
 
 ## Como executar com Docker
 ```
-docker run -d -p 8080:80 USUARIO-DOCKERHUB/NOME-DA-IMAGEM:latest
+docker run -d -p 8080:80 amaia07/catalogo-jogos:latest
 ```
-Depois acesse http://localhost:8080. _(Se a aplicação precisar de variáveis de ambiente, listá-las aqui.)_
+Depois acesse http://localhost:8080. A aplicação não exige variáveis de ambiente.
 
 ## Como rodar os testes
 ```
 npm install
 npm test
 ```
-Os testes (Jest) cobrem as funções de `utils.js`: `calcularMedia`, `validarNota`, `normalizarBusca` e `filtrarPorTitulo`.
+Os testes (Jest) cobrem as funções de `utils.js`: `calcularMedia`, `validarNota`, `normalizarBusca`, `filtrarPorTitulo`e `validarApelido`.
 
 ## Fluxo de trabalho do time
 - A `main` é protegida: só recebe código por Pull Request, com 1 aprovação e o check `testes` verde.
