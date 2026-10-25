@@ -21,11 +21,6 @@ async function carregarJogos() {
     }
 }
 
-// TODO (frente de busca e API): renderizar os cards de resultado usando filtrarPorTitulo(todosOsJogos, termo)
-// TODO (frente de catalogo e banco): adicionar jogo ao catalogo, listar e excluir (Supabase)
-// TODO (frente de notas): formulario de nota/comentario e media por jogo (calcularMedia, validarNota)
-// TODO (frente de favoritos): marcar/desmarcar e filtrar favoritos
-
 function renderizarResultados(jogos) {
     const area = document.getElementById("resultados");
 
@@ -40,6 +35,7 @@ function renderizarResultados(jogos) {
             <img src="${jogo.thumbnail}" alt="Capa de ${jogo.title}">
             <h3>${jogo.title}</h3>
             <p>${jogo.genre} · ${jogo.platform}</p>
+            <button class="btn-favoritar" data-id="${jogo.id}">♥ Favoritar</button>
         </article>
     `).join("");
 }
@@ -65,5 +61,8 @@ botaoBuscar.addEventListener("click", dispararBusca);
 campoBusca.addEventListener("keydown", (e) => {
     if (e.key === "Enter") dispararBusca();
 });
+
+// TODO (frente de catalogo e banco): adicionar jogo ao catalogo, listar e excluir (Supabase)
+// TODO (frente de notas): formulario de nota/comentario e media por jogo (calcularMedia, validarNota)
 
 carregarJogos();
