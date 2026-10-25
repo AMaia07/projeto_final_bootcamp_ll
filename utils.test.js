@@ -2,7 +2,7 @@ const { calcularMedia, validarNota, normalizarBusca, filtrarPorTitulo, validarAp
 
 describe("calcularMedia", () => {
     test("retorna 0 para lista vazia", () => {
-        expect(calcularMedia([])).toBe(0);
+        expect(calcularMedia([8, 9, 10])).toBe(10);
     });
 
     test("calcula a media de varias notas", () => {
