@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Catálogo de Jogos — Bootcamp II</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Catálogo Colaborativo de Jogos</h1>
+        <p>Busque jogos, dê notas e marque seus favoritos</p>
+    </header>
+
+    <main>
+        <section class="busca">
+            <input type="text" id="campo-busca" placeholder="Ex.: overwatch">
+            <button id="botao-buscar">Buscar</button>
+        </section>
+        <p id="status" aria-live="polite">Carregando jogos...</p>
+
+        <!-- Cada frente do time preenche a sua seção -->
+        <section id="resultados"></section>
+        <section id="catalogo"><h2>Catálogo do grupo</h2></section>
+        <section id="favoritos"><h2>Favoritos</h2></section>
+    </main>
+
+    <footer>Dados: FreeToGame (freetogame.com) · Projeto da disciplina Bootcamp II</footer>
+
+    <script src="utils.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>

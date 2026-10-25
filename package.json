@@ -1,0 +1,11 @@
+{
+  "name": "bootcamp2-projeto-final",
+  "version": "1.0.0",
+  "description": "Catalogo colaborativo de jogos com notas e favoritos (Bootcamp II - Etapa 03)",
+  "scripts": {
+    "test": "jest"
+  },
+  "devDependencies": {
+    "jest": "^29.7.0"
+  }
+}

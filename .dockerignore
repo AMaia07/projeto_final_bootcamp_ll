@@ -1,0 +1,13 @@
+.git
+.github
+.gitignore
+.vscode
+.DS_Store
+node_modules
+package.json
+package-lock.json
+*.test.js
+banco
+README.md
+Dockerfile
+.dockerignore
