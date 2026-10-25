@@ -1,4 +1,4 @@
-const { calcularMedia, validarNota, normalizarBusca, filtrarPorTitulo } = require("./utils");
+const { calcularMedia, validarNota, normalizarBusca, filtrarPorTitulo, validarApelido } = require("./utils");
 
 describe("calcularMedia", () => {
     test("retorna 0 para lista vazia", () => {
@@ -47,5 +47,19 @@ describe("filtrarPorTitulo", () => {
 
     test("termo vazio devolve a lista inteira", () => {
         expect(filtrarPorTitulo(jogos, "  ")).toHaveLength(3);
+    });
+});
+
+describe("validarApelido", () => {
+    test("aceita apelido entre 2 e 20 caracteres", () => {
+        expect(validarApelido("Artur")).toBe(true);
+        expect(validarApelido("  Jo  ")).toBe(true);
+    });
+
+    test("rejeita apelido vazio, curto demais ou longo demais", () => {
+        expect(validarApelido("")).toBe(false);
+        expect(validarApelido("A")).toBe(false);
+        expect(validarApelido("a".repeat(21))).toBe(false);
+        expect(validarApelido(null)).toBe(false);
     });
 });
