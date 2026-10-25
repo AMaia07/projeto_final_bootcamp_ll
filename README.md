@@ -3,7 +3,7 @@
 ## Integrantes e responsabilidades
 
 | Nome | Matrícula | Usuário GitHub | Funcionalidade (código) | Link da principal PR |
-| Artur Maia de Morais | 22610962 | AMaia07 | Favoritos: marcar, listar e remover jogos, validação do apelido e testes | [PR #1](https://github.com/AMaia07/projeto_final_bootcamp_ll/pull/1) |
+| Artur Maia de Morais | 22610962 | AMaia07 | Favoritos: marcar, listar e remover jogos, validação do apelido e testes | [PR #1](https://github.com/AMaia07/projeto_final_bootcamp_ll/pull/1) | [PR #2](https://github.com/AMaia07/projeto_final_bootcamp_ll/pull/2) | [PR #3](https://github.com/AMaia07/projeto_final_bootcamp_ll/pull/3) |
 
 
 ## Descrição
@@ -46,7 +46,7 @@ Abrimos a PR #N com um teste quebrado de propósito (`calcularMedia([8, 9, 10])`
 
 ![PR bloqueada pelo CI](evidencias/pr-bloqueada-ci.png)
 
-Link da PR: https://github.com/AMaia07/projeto_final_bootcamp_ll/pull/N
+Link da PR: https://github.com/AMaia07/projeto_final_bootcamp_ll/pull/3
 
 ### Conflito de merge
 Não houve nenhum tipo de conflito no merge.
