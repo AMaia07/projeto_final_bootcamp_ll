@@ -13,6 +13,10 @@
     </header>
 
     <main>
+        <section class="usuario">
+            <input type="text" id="campo-usuario" placeholder="Seu apelido (2 a 20 letras)">
+        </section>
+
         <section class="busca">
             <input type="text" id="campo-busca" placeholder="Ex.: overwatch">
             <button id="botao-buscar">Buscar</button>
@@ -22,12 +26,14 @@
         <!-- Cada frente do time preenche a sua seção -->
         <section id="resultados"></section>
         <section id="catalogo"><h2>Catálogo do grupo</h2></section>
-        <section id="favoritos"><h2>Favoritos</h2></section>
+        <section id="favoritos"><h2>Favoritos</h2><div id="lista-favoritos"></div></section>
     </main>
 
     <footer>Dados: FreeToGame (freetogame.com) · Projeto da disciplina Bootcamp II</footer>
 
+    <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
     <script src="utils.js"></script>
     <script src="script.js"></script>
+    <script src="favoritos.js"></script>
 </body>
 </html>

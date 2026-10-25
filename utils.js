@@ -26,6 +26,12 @@ function filtrarPorTitulo(jogos, termo) {
     return jogos.filter((jogo) => jogo.title.toLowerCase().includes(busca));
 }
 
+// Apelido válido: de 2 a 20 caracteres, sem contar espaços nas pontas.
+function validarApelido(apelido) {
+    const texto = String(apelido ?? "").trim();
+    return texto.length >= 2 && texto.length <= 20;
+}
+
 if (typeof module !== "undefined") {
-    module.exports = { calcularMedia, validarNota, normalizarBusca, filtrarPorTitulo };
+    module.exports = { calcularMedia, validarNota, normalizarBusca, filtrarPorTitulo, validarApelido };
 }
