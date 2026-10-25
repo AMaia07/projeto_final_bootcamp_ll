@@ -40,5 +40,13 @@ Os testes (Jest) cobrem as funções de `utils.js`: `calcularMedia`, `validarNot
 - Cada funcionalidade nasce em uma branch `feature/nome-da-funcionalidade`.
 
 ## Evidências
-- **PR bloqueada pelo CI (teste quebrado de propósito):** _inserir print_
-- **Conflito de merge resolvido:** _relatar como aconteceu e como foi resolvido (ou indicar que não houve)_
+
+### PR bloqueada pelo CI
+Abrimos a PR #N com um teste quebrado de propósito (`calcularMedia([8, 9, 10])` esperando 10 em vez de 9). O check `testes` falhou e o GitHub bloqueou o merge: além do CI vermelho, a PR exigia a aprovação de um colega.
+
+![PR bloqueada pelo CI](evidencias/pr-bloqueada-ci.png)
+
+Link da PR: https://github.com/AMaia07/projeto_final_bootcamp_ll/pull/N
+
+### Conflito de merge
+Não houve nenhum tipo de conflito no merge.
